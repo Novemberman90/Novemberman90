@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <style>
+        .page {
+            text-align: center;
+            width: 50%;
+            border-radius: 20px;
+            background: linear-gradient(180deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 49.7%, rgb(133, 90, 41) 100.5%);
+            max-width: 80%;
+            margin: 30px auto;
+            padding: 10px;
+            font-family: serif;
+            box-shadow: rgb(255, 180, 41) 0px 5px 0px 5px;
+        }
+
+        /*background-color: bisque;*/
+
+        .h1 {
+            color: white;
+            background-color: rgb(156, 95, 44);
+            border-radius: 30px;
+            margin: 20px 50px;
+            padding: 10px;
+
+        }
+
+        .h2 {
+            color: rgb(75, 42, 2);
+
+        }
+
+        hr {
+            margin: 0px 50px 0px 50px;
+            border: white solid 1px;
+        }
+
+        img {
+            margin: 0 auto;
+            display: block;
+            padding: 15px;
+            border-radius: 30px;
+        }
+
+        p {
+            margin: 0px 10px 10px 0px;
+            padding: 20px;
+            color: white;
+            font-size: 16px;
+
+        }
+
+        small {
+            display: block;
+            text-align: left;
+        }
+
+        a {
+            color: white;
+            margin-left: 55px;
+            transition: 300ms all ease-in-out;
+        }
+
+        a:hover {
+            color: greenyellow;
+        }
+
+
+        button {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            padding: 20px;
+            border-color: rgb(255, 116, 2);
+            border: 0px;
+            font-weight: bold;
+            background-color: rgb(255, 116, 2);
+            color: white;
+            box-shadow: black 0px 1px 1px 0px;
+            border-radius: 50%;
+            transition: 250ms all ease-in-out;
+        }
+
+        button:hover {
+            cursor: pointer;
+            color: rgb(255, 116, 2);
+            background-color: white;
+            opacity: 0.7;
+        }
+
+        #git {
+            display: block;
+            color: rgb(165, 165, 165);
+            margin-left: 55px;
+            transition: 300ms all ease-in-out;
+            text-align: center;
+            margin: 0 auto;
+
+        }
+        #git:hover {
+            color: darkorange;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="page">
+        <h1 class="h1">&#x1F90D; I Love Coffee &#x1F90D;</h1>
+        <h2 class="h2">Especially the cappuccino</h2>
+        <hr>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/737/original/Capuchino.jpg?1654798568"
+            alt="image cappuccino">
+        <hr>
+        <p>
+            <b>A cappuccino</b> is an
+            espresso-based coffee drink that originated in Austria with later development taking place in Italy, and is
+            prepared
+            with steamed milk foam.
+        </p>
+        <small><a href="https://en.wikipedia.org/wiki/Cappuccino" target="_blank" title="Mofe info by Wiki">Want to know
+                more?</a></small>
+        <br>
+        <button type="button" class="buttonCup">MAYBE A CUP OF CAPPUCCINO ?&#9749; </button>
+    </div>
+
+    <footer>
+        <address>
+            <a href="https://github.com/Novemberman90/Novemberman90.git" target="_blank" id="git">Coded by NovemberMan90</a>
+        </address>
+    </footer>
+    <script>
+        function buttonCup() {
+            let firstName = prompt("What is you name ?");
+            let age = prompt("How old are you ?");
+            if (age >= 18) {
+                alert("Hi " + firstName + " , We will contact you when the cappuccino is ready");
+            } else {
+                alert("Soory " + firstName + " , but you're too young for coffee");
+            }
+        }
+
+        let buttonCoffee = document.querySelector(".buttonCup");
+        buttonCoffee.addEventListener("click", buttonCup);
+    </script>
+</body>
+
+</html>
